@@ -9,3 +9,32 @@
 a {
     text-decoration: none;
 }
+
+body {
+    font-family: sans-serif;
+    background: #141414;
+}
+
+a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+
+    padding: 15px 40px;
+    font-size: 35px;
+    letter-spacing: 2px;
+    background: #ff0;
+    color: #141414;
+    border-radius: 35px;
+
+    box-shadow: 0 0 0 5px #141414, 0 0 0 10px #ff0;
+    transition: 0.8s cubic-bezier(0.52, 1.65, 1, 1.31);
+}
+
+a:hover {
+    letter-spacing: 10px;
+    transform: translate(-50%, -50%) scaleY(0.9);
+    box-shadow: 0 0 0 3px #141414, 0 0 0 8px #ff0;
+}

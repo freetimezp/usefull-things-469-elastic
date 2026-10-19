@@ -1,0 +1,248 @@
+ELASTIC — Motion Playground
+
+
+<span>ELASTIC®</span>
+<span>CREATIVE EXPERIMENT / #469</span>
+
+
+<div class="loader-ball"></div>
+<div class="loader-number">
+<span class="loader-value">000</span>
+<span class="loader-percent">%</span>
+</div>
+<p class="loader-label">LOADING YOUR EXPERIENCE</p>
+
+
+<span>STRETCH YOUR IMAGINATION</span>
+<div class="loader-track">
+<div class="loader-progress"></div>
+</div>
+<span class="loader-status">INITIALIZING</span>
+
+
+ELASTIC<span>®</span>
+
+
+A LITTLE BIT OF
+<span>PLAYFUL CHAOS.</span>
+
+
+<span>ELASTIC® — MENU</span>
+<span>CHOOSE YOUR DIRECTION</span>
+
+
+<span class="menu-link-number">01</span>
+<span class="menu-link-text">HOME</span>
+<span class="menu-link-arrow">↗</span>
+
+
+<span class="menu-link-number">02</span>
+<span class="menu-link-text">PLAYGROUND</span>
+<span class="menu-link-arrow">↗</span>
+
+
+<span class="menu-link-number">03</span>
+<span class="menu-link-text">ABOUT</span>
+<span class="menu-link-arrow">↗</span>
+
+
+<span class="menu-link-number">04</span>
+<span class="menu-link-text">CONTACT</span>
+<span class="menu-link-arrow">↗</span>
+
+
+<span>STAY CURIOUS.</span>
+<span>BREAK THE RULES. © 2026</span>
+
+
+✳
+
+
+                <svg
+                    class="elastic-lines"
+                    viewBox="0 0 1440 760"
+                    preserveAspectRatio="none"
+                    aria-hidden="true"
+                >
+                    <defs>
+                        <filter
+                            id="elastic-glow"
+                            x="-30%"
+                            y="-30%"
+                            width="160%"
+                            height="160%"
+                        >
+                            <feGaussianBlur stdDeviation="5" result="blur" />
+                            <feMerge>
+                                <feMergeNode in="blur" />
+                                <feMergeNode in="SourceGraphic" />
+                            </feMerge>
+                        </filter>
+                    </defs>
+
+                    <g class="elastic-lines-group">
+                        <path
+                            class="elastic-line elastic-line--one"
+                            d="M -100 180 C 180 40, 330 80, 500 220 S 900 400, 1100 190 S 1350 60, 1540 160"
+                        />
+
+                        <path
+                            class="elastic-line elastic-line--two"
+                            d="M -100 390 C 180 550, 350 500, 520 340 S 900 180, 1080 390 S 1350 580, 1540 410"
+                        />
+
+                        <path
+                            class="elastic-line elastic-line--three"
+                            d="M -100 610 C 180 460, 370 680, 600 590 S 950 430, 1130 590 S 1380 700, 1540 570"
+                        />
+                    </g>
+                </svg>
+
+
+
+<span class="status-dot"></span>
+INDEPENDENT MOTION STUDIO
+
+
+<span>YOUR</span>
+<span class="title-outline">MIND.</span>
+
+
+<span>FIG. 001</span>
+<span>THE SHAPE SHIFTER</span>
+
+
+✳
+
+
+<span class="description-index">[ 001 — 026 ]</span>
+        <p>
+                            Rules are meant to bend.
+                            <br />
+                            Ideas are meant to bounce.
+                        </p>
+
+
+<span>LET'S PLAY</span>
+<span class="cta-arrow">↗</span>
+
+
+BUILT TO BEND — NEVER BREAK
+
+
+<span>DRAG</span>
+<span class="orb-arrow">↗</span>
+
+
+<span>© ELASTIC STUDIO 2026</span>
+<span>MADE TO MOVE.</span>
+<span>MOVE YOUR CURSOR. MOVE YOUR MIND.</span>
+
+
+
+:root {
+    --bg: #141414;
+    --yellow: #f5ff00;
+    --white: #f5f5f0;
+    --muted: #777770;
+    --line: rgba(255, 255, 255, 0.14);
+    --mono: "DM Mono", monospace;
+    --sans: "Space Grotesk", sans-serif;
+}
+
+
+
+const loader = document.querySelector(".loader");
+const loaderValue = document.querySelector(".loader-value");
+const loaderProgress = document.querySelector(".loader-progress");
+const loaderBall = document.querySelector(".loader-ball");
+const loaderStatus = document.querySelector(".loader-status");
+
+const page = document.querySelector(".page");
+const titleLines = document.querySelectorAll(".title-line span");
+const heroImage = document.querySelector(".hero-image");
+const orb = document.querySelector(".elastic-orb");
+const heroCta = document.querySelector(".hero-cta");
+
+
+
+".header",
+        ".hero-label",
+        ".hero-bottom",
+        ".art-label",
+        ".art-star",
+        ".hero-side-note",
+        ".footer",
+
+
+
+if (progress < 35) {
+            loaderStatus.textContent = "INITIALIZING";
+        } else if (progress < 75) {
+            loaderStatus.textContent = "BENDING REALITY";
+        } else {
+            loaderStatus.textContent = "READY TO PLAY";
+        }
+
+
+
+ {
+            scaleX: 1.35,
+            scaleY: 0.72,
+            duration: 0.25,
+        },
+        {
+            scaleX: 0.8,
+            scaleY: 1.3,
+            duration: 0.25,
+        },
+        {
+            scaleX: 1,
+            scaleY: 1,
+            duration: 0.35,
+        },
+
+
+
+const menuButton = document.querySelector(".menu-button");
+const menuOverlay = document.querySelector(".menu-overlay");
+const menuLinks = gsap.utils.toArray(".menu-link");
+const menuLinkTexts = gsap.utils.toArray(".menu-link-text");
+const menuDecoration = document.querySelector(".menu-decoration");
+
+let menuOpen = false;
+let menuAnimating = false;
+
+
+
+    document.body.classList.toggle("menu-open", menuOpen);
+
+    menuButton.classList.toggle("is-active", menuOpen);
+    menuButton.setAttribute("aria-expanded", String(menuOpen));
+
+
+
+menuButton.setAttribute("aria-controls", "menu-overlay");
+menuButton.setAttribute("aria-expanded", "false");
+
+
+
+    const alternatePaths = [
+        "M -100 250 C 180 120, 350 20, 520 180 S 920 480, 1100 240 S 1350 0, 1540 220",
+
+        "M -100 320 C 180 460, 350 580, 520 400 S 900 100, 1080 330 S 1350 640, 1540 350",
+
+        "M -100 680 C 180 520, 370 730, 600 520 S 950 350, 1130 650 S 1380 610, 1540 500",
+    ];
+
+
+
+
+const autumnContainer = document.querySelector(".autumn-particles");
+
+const autumnEmojis = ["🍂", "🍁", "🍂", "🍁", "🍂"];
+
+let autumnAnimationsStarted = false;
+
+
+

@@ -4,17 +4,13 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="theme-color" content="#141414" />
-
         <link rel="stylesheet" href="./assets/css/style.css" />
-
         <title>ELASTIC — Motion Playground</title>
     </head>
 
     <body>
-        <!-- AUTUMN LEAF PARTICLES -->
-        <div class="autumn-particles" aria-hidden="true"></div>
+        <div class="autumn-particles"></div>
 
-        <!-- PRELOADER -->
         <div class="loader">
             <div class="loader-top">
                 <span>ELASTIC®</span>
@@ -39,24 +35,22 @@
             </div>
         </div>
 
-        <!-- MAIN INTRO -->
         <main class="page">
             <header class="header">
-                <a href="#" class="logo">ELASTIC<span>®</span></a>
+                <a href="#" class="logo"> ELASTIC<span>®</span></a>
 
                 <div class="header-note">
                     A LITTLE BIT OF
                     <span>PLAYFUL CHAOS.</span>
                 </div>
 
-                <button class="menu-button" aria-label="Menu">
+                <button class="menu-button">
                     <span></span>
                     <span></span>
                 </button>
             </header>
 
-            <!-- ELASTIC FULLSCREEN MENU -->
-            <nav class="menu-overlay" id="menu-overlay" aria-hidden="true">
+            <nav class="menu-overlay" id="menu-overlay">
                 <div class="menu-overlay-top">
                     <span>ELASTIC® — MENU</span>
                     <span>CHOOSE YOUR DIRECTION</span>
@@ -97,7 +91,6 @@
             </nav>
 
             <section class="hero" id="home">
-                <!-- ELASTIC BACKGROUND LINES -->
                 <svg
                     class="elastic-lines"
                     viewBox="0 0 1440 760"
@@ -147,7 +140,6 @@
                     <h1 class="title-line title-line-one">
                         <span>STRETCH</span>
                     </h1>
-
                     <h1 class="title-line title-line-two">
                         <span>YOUR</span>
                         <span class="title-outline">MIND.</span>
@@ -157,7 +149,7 @@
                 <div class="hero-art">
                     <img
                         src="./assets/images/card.png"
-                        alt="Playful cartoon mask character"
+                        alt=""
                         class="hero-image"
                     />
 
@@ -187,8 +179,7 @@
 
                 <div class="hero-side-note">BUILT TO BEND — NEVER BREAK</div>
 
-                <!-- Interactive draggable element -->
-                <div class="elastic-orb" aria-label="Drag me">
+                <div class="elastic-orb">
                     <span>DRAG</span>
                     <span class="orb-arrow">↗</span>
                 </div>
@@ -201,9 +192,8 @@
             </footer>
         </main>
 
-        <!-- GSAP -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/Draggable.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.15.0/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.15.0/Draggable.min.js"></script>
 
         <script src="./assets/js/main.js"></script>
     </body>

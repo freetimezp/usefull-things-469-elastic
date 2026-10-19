@@ -1,15 +1,209 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="theme-color" content="#141414" />
+
         <link rel="stylesheet" href="./assets/css/style.css" />
-        <title>Project</title>
+
+        <title>ELASTIC — Motion Playground</title>
     </head>
 
     <body>
-        <a href="#">Elastic</a>
+        <!-- AUTUMN LEAF PARTICLES -->
+        <div class="autumn-particles" aria-hidden="true"></div>
+
+        <!-- PRELOADER -->
+        <div class="loader">
+            <div class="loader-top">
+                <span>ELASTIC®</span>
+                <span>CREATIVE EXPERIMENT / #469</span>
+            </div>
+
+            <div class="loader-center">
+                <div class="loader-ball"></div>
+                <div class="loader-number">
+                    <span class="loader-value">000</span>
+                    <span class="loader-percent">%</span>
+                </div>
+                <p class="loader-label">LOADING YOUR EXPERIENCE</p>
+            </div>
+
+            <div class="loader-bottom">
+                <span>STRETCH YOUR IMAGINATION</span>
+                <div class="loader-track">
+                    <div class="loader-progress"></div>
+                </div>
+                <span class="loader-status">INITIALIZING</span>
+            </div>
+        </div>
+
+        <!-- MAIN INTRO -->
+        <main class="page">
+            <header class="header">
+                <a href="#" class="logo">ELASTIC<span>®</span></a>
+
+                <div class="header-note">
+                    A LITTLE BIT OF
+                    <span>PLAYFUL CHAOS.</span>
+                </div>
+
+                <button class="menu-button" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                </button>
+            </header>
+
+            <!-- ELASTIC FULLSCREEN MENU -->
+            <nav class="menu-overlay" id="menu-overlay" aria-hidden="true">
+                <div class="menu-overlay-top">
+                    <span>ELASTIC® — MENU</span>
+                    <span>CHOOSE YOUR DIRECTION</span>
+                </div>
+
+                <div class="menu-links">
+                    <a href="#home" class="menu-link">
+                        <span class="menu-link-number">01</span>
+                        <span class="menu-link-text">HOME</span>
+                        <span class="menu-link-arrow">↗</span>
+                    </a>
+
+                    <a href="#play" class="menu-link">
+                        <span class="menu-link-number">02</span>
+                        <span class="menu-link-text">PLAYGROUND</span>
+                        <span class="menu-link-arrow">↗</span>
+                    </a>
+
+                    <a href="#about" class="menu-link">
+                        <span class="menu-link-number">03</span>
+                        <span class="menu-link-text">ABOUT</span>
+                        <span class="menu-link-arrow">↗</span>
+                    </a>
+
+                    <a href="#contact" class="menu-link">
+                        <span class="menu-link-number">04</span>
+                        <span class="menu-link-text">CONTACT</span>
+                        <span class="menu-link-arrow">↗</span>
+                    </a>
+                </div>
+
+                <div class="menu-overlay-bottom">
+                    <span>STAY CURIOUS.</span>
+                    <span>BREAK THE RULES. © 2026</span>
+                </div>
+
+                <div class="menu-decoration">✳</div>
+            </nav>
+
+            <section class="hero" id="home">
+                <!-- ELASTIC BACKGROUND LINES -->
+                <svg
+                    class="elastic-lines"
+                    viewBox="0 0 1440 760"
+                    preserveAspectRatio="none"
+                    aria-hidden="true"
+                >
+                    <defs>
+                        <filter
+                            id="elastic-glow"
+                            x="-30%"
+                            y="-30%"
+                            width="160%"
+                            height="160%"
+                        >
+                            <feGaussianBlur stdDeviation="5" result="blur" />
+                            <feMerge>
+                                <feMergeNode in="blur" />
+                                <feMergeNode in="SourceGraphic" />
+                            </feMerge>
+                        </filter>
+                    </defs>
+
+                    <g class="elastic-lines-group">
+                        <path
+                            class="elastic-line elastic-line--one"
+                            d="M -100 180 C 180 40, 330 80, 500 220 S 900 400, 1100 190 S 1350 60, 1540 160"
+                        />
+
+                        <path
+                            class="elastic-line elastic-line--two"
+                            d="M -100 390 C 180 550, 350 500, 520 340 S 900 180, 1080 390 S 1350 580, 1540 410"
+                        />
+
+                        <path
+                            class="elastic-line elastic-line--three"
+                            d="M -100 610 C 180 460, 370 680, 600 590 S 950 430, 1130 590 S 1380 700, 1540 570"
+                        />
+                    </g>
+                </svg>
+
+                <div class="hero-label">
+                    <span class="status-dot"></span>
+                    INDEPENDENT MOTION STUDIO
+                </div>
+
+                <div class="hero-title">
+                    <h1 class="title-line title-line-one">
+                        <span>STRETCH</span>
+                    </h1>
+
+                    <h1 class="title-line title-line-two">
+                        <span>YOUR</span>
+                        <span class="title-outline">MIND.</span>
+                    </h1>
+                </div>
+
+                <div class="hero-art">
+                    <img
+                        src="./assets/images/card.png"
+                        alt="Playful cartoon mask character"
+                        class="hero-image"
+                    />
+
+                    <div class="art-label art-label-top">
+                        <span>FIG. 001</span>
+                        <span>THE SHAPE SHIFTER</span>
+                    </div>
+
+                    <div class="art-star">✳</div>
+                </div>
+
+                <div class="hero-bottom">
+                    <div class="hero-description">
+                        <span class="description-index">[ 001 — 026 ]</span>
+                        <p>
+                            Rules are meant to bend.
+                            <br />
+                            Ideas are meant to bounce.
+                        </p>
+                    </div>
+
+                    <a href="#play" class="hero-cta">
+                        <span>LET'S PLAY</span>
+                        <span class="cta-arrow">↗</span>
+                    </a>
+                </div>
+
+                <div class="hero-side-note">BUILT TO BEND — NEVER BREAK</div>
+
+                <!-- Interactive draggable element -->
+                <div class="elastic-orb" aria-label="Drag me">
+                    <span>DRAG</span>
+                    <span class="orb-arrow">↗</span>
+                </div>
+            </section>
+
+            <footer class="footer" id="play">
+                <span>© ELASTIC STUDIO 2026</span>
+                <span>MADE TO MOVE.</span>
+                <span>MOVE YOUR CURSOR. MOVE YOUR MIND.</span>
+            </footer>
+        </main>
+
+        <!-- GSAP -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/Draggable.min.js"></script>
 
         <script src="./assets/js/main.js"></script>
     </body>
